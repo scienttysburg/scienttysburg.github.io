@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>scienttysburg のゲーム</title>
+<meta name="description" content="scienttysburg が作ったゲームの一覧">
+<style>
+:root {
+  --bg: #E4ECE6;
+  --fg: #1F2A22;
+  --accent: #1E5536;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #101C15;
+    --fg: #DCE8E0;
+    --accent: #4FA374;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: system-ui, -apple-system, "Hiragino Sans", "Yu Gothic UI", "Meiryo", sans-serif;
+  line-height: 1.7;
+}
+main {
+  max-width: 36rem;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+}
+h1 {
+  margin: 0 0 2rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+li + li { margin-top: 0.75rem; }
+a {
+  display: block;
+  padding: 1rem 1.25rem;
+  border: 2px solid var(--accent);
+  border-radius: 0.75rem;
+  color: var(--accent);
+  font-weight: 700;
+  text-decoration: none;
+}
+a small {
+  display: block;
+  color: var(--fg);
+  font-weight: 400;
+  font-size: 0.875rem;
+}
+a:hover, a:focus-visible {
+  background: var(--accent);
+  color: var(--bg);
+}
+a:hover small, a:focus-visible small { color: var(--bg); }
+a:focus-visible { outline: 3px solid var(--fg); outline-offset: 2px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>scienttysburg のゲーム</h1>
+  <ul>
+    <li><a href="reversi/">パーフェクト・リバーシ<small>全探索で最後まで読み切ったAIと対局する、4×4のリバーシ</small></a></li>
+  </ul>
+</main>
+</body>
+</html>
